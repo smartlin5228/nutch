@@ -890,6 +890,8 @@
   <!-- target: clean-build  ============================================= -->
   <target name="clean-build" description="--> clean the project built files">
     <delete includeemptydirs="true" dir="${build.dir}"/>
+    <delete file="conf/regex-urlfilter.txt"/>
+    <delete file="conf/nutch-site.xml"/>
   </target>
 
   <!-- target: clean-dist   ============================================= -->
@@ -1051,6 +1053,7 @@
         <source path="${plugins.dir}/parse-js/src/java/" />
         <source path="${plugins.dir}/parse-metatags/src/java/" />
         <source path="${plugins.dir}/parse-metatags/src/test/" />
+        <source path="${plugins.dir}/parse-googleplay/src/java/" />
         <source path="${plugins.dir}/parse-swf/src/java/" />
         <source path="${plugins.dir}/parse-swf/src/test/" />
         <source path="${plugins.dir}/parse-tika/src/java/" />

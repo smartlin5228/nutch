@@ -68,6 +68,10 @@
 		<plugin id="feed" />
 	</mimeType>
 
+        <mimeType name="text/html">
+                <plugin id="parse-googleplay" />
+        </mimeType>
+
        <!-- Types for parse-ext plugin: required for unit tests to pass. -->
 
 	<mimeType name="application/vnd.nutch.example.cat">
@@ -86,6 +90,8 @@
 		<alias name="parse-ext" extension-id="ExtParser" />
 		<alias name="parse-html"
 			extension-id="org.apache.nutch.parse.html.HtmlParser" />
+                <alias name="parse-googleplay"
+                        extension-id="com.example.googleplay.GoogleplayParser" />
 		<alias name="parse-js" extension-id="JSParser" />
 		<alias name="feed"
 			extension-id="org.apache.nutch.parse.feed.FeedParser" />
